@@ -6,18 +6,16 @@
 module.exports = {
   development: {
     client: "pg",
-    connection: {
-      connection: "postgres://postgres:docker@localhost:5432/postgres",
-      // filename: './dev.sqlite3'
-    },
+    connection: "postgres://postgres:docker@localhost:5432/postgres",
+    // filename: './dev.sqlite3'
   },
 
   staging: {
     client: "postgresql",
     connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
+      database: "postgres",
+      user: "postgres",
+      password: "docker",
     },
     pool: {
       min: 2,
