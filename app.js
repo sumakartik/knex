@@ -6,7 +6,7 @@ const knex = require("knex")(
   require("./knexfile.js")[process.env.NODE_ENV || "development"]
 );
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get("/movies", function (req, res) {
   knex
@@ -24,3 +24,5 @@ app.get("/movies", function (req, res) {
 app.listen(PORT, () => {
   console.log(`The server is running on ${PORT}`);
 });
+
+module.exports = app;

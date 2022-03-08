@@ -1,9 +1,10 @@
 {
   "name": "knex",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Your purpose is to give a web server (an Express application) read and write access to a database. So far, you have had to create the database and its schema separately from the application but, by using a tool like Knex.js, a JavaScript-based database query and schema builder, you can abstract away the syntax for those operations into JavaScript.",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +14,14 @@
     "express": "^4.17.3",
     "knex": "^1.0.3",
     "pg": "^8.7.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumakartik/knex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sumakartik/knex/issues"
+  },
+  "homepage": "https://github.com/sumakartik/knex#readme"
 }
