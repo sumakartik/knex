@@ -8,7 +8,7 @@ const knex = require("knex")(
 
 app.use(express.json());
 
-app.get("/movies", function (req, res) {
+app.get("/", function (req, res) {
   knex
     .select("*")
     .from("movies")
@@ -24,5 +24,3 @@ app.get("/movies", function (req, res) {
 app.listen(PORT, () => {
   console.log(`The server is running on ${PORT}`);
 });
-
-module.exports = app;
